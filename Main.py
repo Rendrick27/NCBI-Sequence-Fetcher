@@ -28,3 +28,10 @@ handle.close()
 
 # Print sequences to stdout
 print(sequences)
+
+##Link: https://stuntspt.gitlab.io/asb2023/classes/class_05/index.html#/
+##Criado por
+#David
+#Helder
+#Joana
+#Rendrick
