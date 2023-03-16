@@ -5,4 +5,5 @@ Linux -> sudo apt-get install python-pip
 pip install biopython
 
 ## Exemplo de uso
-Abrir terminal -> python3 retrieve_sequences.py nucleotide "Homo sapiens[Organism] AND TNF[Gene]"
+Abrir terminal -> python3 Main.py nucleotide "bos taurus[organism] AND CYTB[gene]"
+
