@@ -48,4 +48,3 @@ if __name__ == '__main__':
 
     # Chama a função fetch_sequences com os argumentos fornecidos pelo usuário
     fetch_sequences(database, term)
-
