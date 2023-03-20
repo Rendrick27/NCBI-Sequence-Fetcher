@@ -30,7 +30,7 @@ This will fetch the sequences in batches and print them to the console.
 This script uses the Bio.Entrez library from the Biopython project.
 
 ## Created by
-David Cabrita 202100320
-Helder Marques 202100959
-Joana Fonseca 202100981
-Rendrick Carreira 201901365
+David Cabrita 202100320;
+Helder Marques 202100959;
+Joana Fonseca 202100981;
+Rendrick Carreira 201901365.
