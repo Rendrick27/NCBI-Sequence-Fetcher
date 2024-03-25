@@ -12,7 +12,7 @@ on:
 
 jobs:
   lint:
-    name: Lint Python code
+    name: PEP8
     runs-on: ubuntu:latest
 
     steps:
