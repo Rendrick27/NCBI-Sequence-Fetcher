@@ -6,8 +6,8 @@ import sys
 def parse_command_line_arguments():
     """
     Parses commwand line arguments.
-    Expects two arguments besides the script name: 
-        the database name 
+    Expects two arguments besides the script name:
+        the database name
         the search term.
     Returns:
         db_name (str): The name of the database to query.
@@ -59,7 +59,7 @@ def fetch_sequences(db_name, search_results):
 
 def main():
     """
-    Main function to orchestrate the querying 
+    Main function to orchestrate the querying
         and fetching of sequences from the Entrez database.
     """
     db_name, search_term = parse_command_line_arguments()
@@ -69,4 +69,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    # This is a line that runs the script.
