@@ -12,7 +12,6 @@ jobs:
   Lint:
     name: PEP8
     runs-on: ubuntu-latest
-    container: rendrick27/snakemake:latest
 
     steps:
       - name: Checkout code
@@ -21,7 +20,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.8
+          python-version: 3.11
 
       - name: Install dependencies
         run: |
@@ -35,7 +34,6 @@ jobs:
   Test:
     name: Test Script
     runs-on: ubuntu-latest
-    container: rendrick27/snakemake:latest
 
     steps:
       - name: Checkout code
@@ -44,7 +42,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.8'
+          python-version: '3.11'
 
       - name: Install dependencies
         run: |
