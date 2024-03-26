@@ -12,6 +12,7 @@ jobs:
   Lint:
     name: PEP8
     runs-on: ubuntu-latest
+    container: rendrick27/snakemake:latest
 
     steps:
       - name: Checkout code
@@ -34,6 +35,7 @@ jobs:
   Test:
     name: Test Script
     runs-on: ubuntu-latest
+    container: rendrick27/snakemake:latest
 
     steps:
       - name: Checkout code
