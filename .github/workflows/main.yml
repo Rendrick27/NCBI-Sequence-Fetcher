@@ -30,7 +30,7 @@ jobs:
       - name: Run Flake8
         run: |
           flake8 .
-          
+
   Test:
     name: Test Script
     runs-on: ubuntu-latest
@@ -51,7 +51,7 @@ jobs:
 
       - name: Run script
         run: |
-          python fetch_sequences.py nucleotide "Escherichia coli"
+          python fetch_sequences.py nucleotide "LC020659"
         env:
           NCBI_EMAIL: rendrickcarreira@gmail.com
 
