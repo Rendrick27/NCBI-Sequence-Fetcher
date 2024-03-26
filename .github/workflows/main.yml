@@ -1,4 +1,4 @@
-name: Python Script Test
+name: Python
 
 on:
   push:
@@ -9,8 +9,30 @@ on:
       - main
 
 jobs:
-  test-script:
-    name: Test BioPython Script
+  Lint:
+    name: PEP8
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install flake8
+
+      - name: Run Flake8
+        run: |
+          flake8 .
+          
+  Test:
+    name: Test Script
     runs-on: ubuntu-latest
 
     steps:
@@ -32,3 +54,4 @@ jobs:
           python fetch_sequences.py nucleotide "Escherichia coli"
         env:
           NCBI_EMAIL: rendrickcarreira@gmail.com
+
