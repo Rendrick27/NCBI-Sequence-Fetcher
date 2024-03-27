@@ -1,20 +1,22 @@
+import sys
 from Bio import Entrez
 from Bio import SeqIO
-import sys
 
 
 def parse_command_line_arguments():
     """
     Parses commwand line arguments.
     Expects two arguments besides the script name:
-        the database name
-        the search term.
+        - Database name
+        - Search term
     Returns:
-        db_name (str): The name of the database to query.
-        search_term (str): The search term to use for querying the database.
+        db_name (str): 
+            - The name of the database to query (Ex: nucleotide)
+        search_term (str): 
+            - The search term to use for querying the database
     """
     if len(sys.argv) != 3:
-        print("Usage: python script.py <database> <search_term>")
+        print("Usage: python3 script.py <database> <search_term>")
         sys.exit(1)
     db_name = sys.argv[1]
     search_term = sys.argv[2]
@@ -29,10 +31,11 @@ def search_database(db_name, search_term):
         db_name (str): The database to search.
         search_term (str): The term to search for.
     Returns:
-        search_results: The results of the search, including WebEnv
-                                                   and QueryKey.
+        search_results: 
+            - WebEnv
+            - QueryKey
     """
-    Entrez.email = "rendrickcarreira@gmail.com"
+    Entrez.email = "rendrickcarreira.social@gmail.com"
     search_handle = Entrez.esearch(db=db_name, term=search_term,
                                    usehistory="y")
     search_results = Entrez.read(search_handle)
