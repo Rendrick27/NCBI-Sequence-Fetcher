@@ -10,9 +10,9 @@ def parse_command_line_arguments():
         - Database name
         - Search term
     Returns:
-        db_name (str): 
+        db_name (str):
             - The name of the database to query (Ex: nucleotide)
-        search_term (str): 
+        search_term (str):
             - The search term to use for querying the database
     """
     if len(sys.argv) != 3:
@@ -31,7 +31,7 @@ def search_database(db_name, search_term):
         db_name (str): The database to search.
         search_term (str): The term to search for.
     Returns:
-        search_results: 
+        search_results:
             - WebEnv
             - QueryKey
     """
