@@ -1,7 +1,7 @@
 import sys
 from Bio import Entrez, SeqIO
 
- 
+
 def parse_command_line_arguments():
     """
     Parses commwand line arguments.
