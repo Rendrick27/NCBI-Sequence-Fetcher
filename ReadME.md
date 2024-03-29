@@ -9,9 +9,6 @@ This work was proposed in the Curricular Unit of Biology Analysis and Sequences 
 * Bio.Entrez library
 
 ## Installation
-This script requires **Python 3** and the **Bio.Entrez** library.
-
-## Installation
 ### Biopython
 ```bash
 pip install biopython
